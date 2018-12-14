@@ -1,6 +1,6 @@
 # X11-CW
 
-##Introduction
+## Introduction
 
 A C++ Wrapper and template for easy rendering and controlling of actions to develop applications, games or any other object.
 This is intended to be used parallely with computation libraries such as OpenGL, OpenCL, CUDA, etc. However, it is optional
@@ -8,7 +8,7 @@ to use them. It makes use of a triple buffering strategy inside so that one does
 building the matrices, pushing them to the display API and setting controls for every event.
 
 
-##Prerequisites
+## Prerequisites
 
 Requirements are X11 packages: xorg-server xorg-dev
 
@@ -16,7 +16,7 @@ Requirements are X11 packages: xorg-server xorg-dev
 sudo apt install xorg xorg-dev xorg-docs
 '''
 
-##Suggested
+## Suggested
 Below are the suggested tools that you might need for development :
 
 * OpenCL(And dependencies, look ICD )
