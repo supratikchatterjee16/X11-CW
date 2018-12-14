@@ -12,7 +12,7 @@ building the matrices, pushing them to the display API and setting controls for 
 
 Requirements are X11 packages: xorg-server xorg-dev
 
-```
+```shell
 sudo apt install xorg xorg-dev xorg-docs
 ```
 
