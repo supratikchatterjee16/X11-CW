@@ -3,7 +3,9 @@ int mutexDisplay(){
 		if(XPending(display)){
 			eventsHandler();
 		}
-		else displayHandler();
+		else{
+			displayHandler();
+		} 
 }
 
 int startx(){

@@ -6,6 +6,7 @@
 #include<X11/extensions/xf86vmode.h>
 
 #include<iostream>
+#include<stdlib.h>
 #include"vars.cpp" //This contains all useful variable names to be used.
 #include"structs.cpp" // Contains the datastructure for the controls
 #include"init.cpp" // This stores the init function

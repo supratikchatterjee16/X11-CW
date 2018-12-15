@@ -19,6 +19,9 @@ int init() {
 		attributes.override_redirect = True;
 		mainWindow =XCreateWindow(display,rootWindow,0,0,DefaultDisplayProp.width, DefaultDisplayProp.height, 0, 
 													CopyFromParent, InputOutput, CopyFromParent, valuemask, &attributes);
+		window_height = DefaultDisplayProp.height;
+		window_width = DefaultDisplayProp.width;
+		window_position_x = window_position_y = window_border_width = 0;
 	}
 	else{
 		mainWindow = XCreateSimpleWindow(display, rootWindow, window_position_x, window_position_y, window_width, 
