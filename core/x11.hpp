@@ -14,5 +14,5 @@
 
 #include"../events/events.hpp" // This exists in the 'events' folder and is to be kept seperate
 
-#include"index.cpp"// This stores the startx function that joins all together and is responsible for the main program execution.
+#include"driver.cpp"// This stores the startx function that joins all together and is responsible for the main program execution.
 #endif

@@ -35,6 +35,6 @@ class Color{
 		}
 };
 
-struct DisplayProp{
+struct DisplayProperties{
 	int height, width, depth;
 }DefaultDisplayProp;

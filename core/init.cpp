@@ -12,12 +12,19 @@ int init() {
 	connectionNumber = ConnectionNumber(display);
 	
 	unsigned long valuemask = 0;
+	
 	XSetWindowAttributes attributes;
 	if(fullscreen){
 		valuemask |= CWOverrideRedirect;
 		attributes.override_redirect = True;
+		mainWindow =XCreateWindow(display,rootWindow,0,0,DefaultDisplayProp.width, DefaultDisplayProp.height, 0, 
+													CopyFromParent, InputOutput, CopyFromParent, valuemask, &attributes);
 	}
-	mainWindow =XCreateWindow(display,rootWindow,0,0,DefaultDisplayProp.width, DefaultDisplayProp.height, 0,CopyFromParent, InputOutput, CopyFromParent, valuemask, &attributes);
+	else{
+		mainWindow = XCreateSimpleWindow(display, rootWindow, window_position_x, window_position_y, window_width, 
+															window_height, window_border_width, white.decimal, black.decimal);
+	}
+	
 	XSetStandardProperties(display,mainWindow, appname, "Program Name",None,NULL,0,NULL);
 	XSelectInput(display, mainWindow, KeyPressMask | KeyReleaseMask | ButtonPressMask | ButtonReleaseMask | PointerMotionMask | Button1MotionMask | Button2MotionMask | Button3MotionMask | Button4MotionMask | Button5MotionMask | ButtonMotionMask | ColormapChangeMask | ExposureMask);
 	
