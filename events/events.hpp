@@ -1,3 +1,7 @@
+//Project : X11-CW
+//Author : Supratik Chatterjee
+//Please do not make changes to the function names in the associated files
+//Write your procedures in the functions provided under the 'events' and 'display' folders.
 #ifndef __X11EVENTS
 #define __X11EVENTS
 #include"buttonpress.cpp"
